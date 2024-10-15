@@ -90,5 +90,13 @@
     "contract-address": "Contract address",
     "owner": "Owner",
     "transfer-btn": "Transfer"
+  },
+  "header": {
+    "start": "Start",
+    "blockchain-basics": "Blockchain Basics",
+    "binex": "Binex",
+    "vpp-documentation": "VPP Doc",
+    "events": "Events",
+    "guide": "Guide ↗"
   }
 }

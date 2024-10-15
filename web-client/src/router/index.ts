@@ -11,16 +11,41 @@ import { ROUTE_NAMES } from '@/enums'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/:catchAll(.*)',
-    redirect: { name: ROUTE_NAMES.nfts },
+    redirect: { name: ROUTE_NAMES.home },
   },
   {
-    path: '/nfts',
-    name: ROUTE_NAMES.nfts,
+    path: '/',
+    name: ROUTE_NAMES.home,
+    component: () => import('@/pages/HomePage'),
+  },
+  {
+    path: '/blockchain-basics',
+    name: ROUTE_NAMES.blockchainBasics,
+    component: () => import('@/pages/BlockchainBasicsPage'),
+  },
+  {
+    path: '/binex',
+    name: ROUTE_NAMES.binex,
+    component: () => import('@/pages/BinexPage'),
+  },
+  {
+    path: '/events',
+    name: ROUTE_NAMES.events,
+    component: () => import('@/pages/EventsPage'),
+  },
+  {
+    path: '/vpp',
+    name: ROUTE_NAMES.vpp,
+    component: () => import('@/pages/VppDocPage'),
+  },
+  {
+    path: '/vpp/nfts',
+    name: ROUTE_NAMES.vppNFTs,
     component: () => import('@/pages/NftsPage'),
   },
   {
-    path: '/nfts/:id',
-    name: ROUTE_NAMES.nftDetails,
+    path: '/vpp/nfts/:id',
+    name: ROUTE_NAMES.vppNFTDetails,
     component: () => import('@/pages/NftDetailsPage'),
   },
 ]

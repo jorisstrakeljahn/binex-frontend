@@ -2,10 +2,10 @@
   <div class="app-logo">
     <img
       class="app-logo__img"
-      src="/branding/logo.svg"
+      src="/branding/logo-arbeitskreis.png"
       :alt="$config.APP_NAME"
     />
-    <router-link class="app-logo__link" :to="{ name: $routes.nfts }" />
+    <router-link class="app-logo__link" :to="{ name: $routes.home }" />
   </div>
 </template>
 
