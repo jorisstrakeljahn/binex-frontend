@@ -8,4 +8,6 @@ export enum ROUTE_NAMES {
   blockchainBasics = 'blockchain-basics',
   events = 'events',
   vpp = 'vpp',
+  imprint = 'imprint',
+  privacy = 'privacy',
 }

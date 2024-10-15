@@ -98,5 +98,45 @@
     "vpp-documentation": "VPP Doc",
     "events": "Events",
     "guide": "Guide ↗"
+  },
+  "home-page": {
+    "title": "Arbeitskreis Blockchain",
+    "subtitle": "Gemeinsam lernen und arbeiten mit den Themen Blockchain, Decentralized Finance, Kryptografie und Governance.",
+    "projects": "Projekte",
+    "info-title": "Blockchain und Krypto in der Lehre",
+    "info-text": "Trotz wachsender Bedeutung der Blockchain-Technologie ist das Wissen über die Technologie und deren vielfältigen Anwendungsmöglichkeiten bisher in den Curricular der Hochschulstudiengänge weit unterrepräsentiert. Dies mag daran liegen, dass die Blockchain-Technologie für Dozenten kein einfach zu vermittelnder Lehrinhalt ist. Verlangt sie doch als Querschnittstechnologie von den Lehrenden ein fundiertes interdisziplinäres Wissen in Datenbankanwendungen, Kryptographie, Prozessorganisation und über deren vielfältigen Anwendungsmöglichkeiten in der Ökonomie. Daher bleibt für Studierende die Blockchain-, Token- und Kryptowelt meist sehr abstrakt, ohne persönlichen Zugang und die Möglichkeit des Sammelns von eigenen Erfahrungen. Studierenden und Lehrenden fehlt ein konkretes Anwendungsbeispiel für die Nutzung von Token auf der Blockchain. Dies will der Arbeitskreis DeFi verändern."
+  },
+  "events-page": {
+    "title": "Veranstaltungen"
+  },
+  "blockchain-basics-page": {
+    "title": "Blockchain Basics"
+  },
+  "binex-page": {
+    "title": "Binex Projekt"
+  },
+  "vpp-documentation-page": {
+    "title": "Versuchspersonenpunkte Dokumentation"
+  },
+  "footer": {
+    "newsTitle": "Neuigkeiten und Termine",
+    "footerTitle": "Arbeitskreis Blockchain",
+    "footerText": "Eine Initiative von Studierenden für Studierende an der Hochschule Bielefeld.",
+    "contactTitle": "Kontakt",
+    "contactPerson": "Prof. Dr. Rainer Lenz",
+    "contactPhone": "+49.521.106-70212",
+    "contactEmail": "ak-krypto@hsbi.de",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz"
+  },
+  "imprint-page": {
+    "title": "Impressum"
+  },
+  "privacy-page": {
+    "title": "Datenschutz"
+  },
+  "underConstruction": {
+    "title": "Seite im Aufbau",
+    "message": "Diese Seite befindet sich derzeit im Aufbau. Bitte schauen Sie später noch einmal vorbei."
   }
 }

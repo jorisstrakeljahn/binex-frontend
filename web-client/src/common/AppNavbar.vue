@@ -3,7 +3,6 @@
     <app-logo class="app-navbar__logo" v-if="!isMenuOpen" />
     <div class="spacer" />
 
-    <!-- Navigation für Desktop -->
     <nav class="navigation" v-if="!isMenuOpen">
       <ul>
         <li>
@@ -29,7 +28,6 @@
       </ul>
     </nav>
 
-    <!-- Menü-Icon für Mobile -->
     <img
       :src="isMenuOpen ? CloseMenuIcon : OpenMenuIcon"
       alt="Menu Icon"
@@ -38,7 +36,6 @@
     />
   </div>
 
-  <!-- Overlay-Menü -->
   <div class="mobile-menu" v-if="isMenuOpen">
     <nav class="mobile-navigation">
       <ul>
@@ -71,7 +68,6 @@
           </div>
         </li>
 
-        <!-- Menüeintrag "VPP Documentation" mit Button -->
         <li class="highlight-item">
           <div class="menu-item-with-button">
             <router-link
@@ -139,7 +135,6 @@ function toggleMenu() {
   height: 44.41px;
 }
 
-/* Navigation Styling */
 .navigation ul {
   list-style: none;
   display: flex;
@@ -150,8 +145,9 @@ function toggleMenu() {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  font-size: 1.1rem;
   display: block;
-  padding: toRem(12) toRem(16);
+  padding: toRem(12) toRem(10);
   border-radius: 0;
 }
 
@@ -163,7 +159,6 @@ function toggleMenu() {
   font-size: toRem(20);
 }
 
-/* Flex-Container für Menüeintrag und Button */
 .menu-item-with-button {
   display: flex;
   align-items: center;
@@ -172,7 +167,6 @@ function toggleMenu() {
   border-radius: toRem(15);
 }
 
-/* Styling für den Menülink innerhalb des Flex-Containers */
 .menu-item-with-button .menu-link {
   color: #000000;
   background-color: #ffffff;
@@ -184,7 +178,6 @@ function toggleMenu() {
   flex: 1;
 }
 
-/* Styling für den Button */
 .instruction-button {
   border: 1px solid #000000;
   border-radius: toRem(10);
@@ -196,7 +189,6 @@ function toggleMenu() {
   margin-left: toRem(8);
 }
 
-/* Anpassungen für die hervorgehobenen Elemente */
 .mobile-navigation .highlight-item {
   background-color: #ffffff;
   border-radius: toRem(15);
@@ -211,7 +203,6 @@ function toggleMenu() {
   border-radius: 0;
 }
 
-/* Menu Icon Styling */
 .menu-icon {
   width: toRem(24);
   height: toRem(24);
@@ -219,7 +210,6 @@ function toggleMenu() {
   display: none;
 }
 
-/* Responsives Design */
 @media (max-width: 767px) {
   .navigation {
     display: none;
@@ -230,7 +220,6 @@ function toggleMenu() {
   }
 }
 
-/* Mobile Menu Overlay */
 .mobile-menu {
   position: fixed;
   top: 0;

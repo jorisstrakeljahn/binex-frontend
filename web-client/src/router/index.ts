@@ -48,6 +48,16 @@ const routes: Array<RouteRecordRaw> = [
     name: ROUTE_NAMES.vppNFTDetails,
     component: () => import('@/pages/NftDetailsPage'),
   },
+  {
+    path: '/imprint',
+    name: ROUTE_NAMES.imprint,
+    component: () => import('@/pages/ImprintPage'),
+  },
+  {
+    path: '/privacy',
+    name: ROUTE_NAMES.privacy,
+    component: () => import('@/pages/PrivacyPage'),
+  },
 ]
 
 const router = createRouter({
