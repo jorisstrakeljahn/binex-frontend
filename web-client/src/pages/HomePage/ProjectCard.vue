@@ -61,7 +61,7 @@ export default {
   }
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
   }
 }
 

@@ -7,22 +7,22 @@
       <ul>
         <li>
           <router-link :to="{ name: ROUTE_NAMES.blockchainBasics }">
-            {{ $t('header.blockchain-basics') }}
+            {{ t('header.blockchain-basics') }}
           </router-link>
         </li>
         <li>
           <router-link :to="{ name: ROUTE_NAMES.binex }">
-            {{ $t('header.binex') }}
+            {{ t('header.binex') }}
           </router-link>
         </li>
         <li>
           <router-link :to="{ name: ROUTE_NAMES.vpp }">
-            {{ $t('header.vpp-documentation') }}
+            {{ t('header.vpp-documentation') }}
           </router-link>
         </li>
         <li>
           <router-link :to="{ name: ROUTE_NAMES.events }">
-            {{ $t('header.events') }}
+            {{ t('header.events') }}
           </router-link>
         </li>
       </ul>
@@ -41,7 +41,7 @@
       <ul>
         <li>
           <router-link :to="{ name: ROUTE_NAMES.home }" @click="toggleMenu">
-            {{ $t('header.start') }}
+            {{ t('header.start') }}
           </router-link>
         </li>
         <li>
@@ -49,7 +49,7 @@
             :to="{ name: ROUTE_NAMES.blockchainBasics }"
             @click="toggleMenu"
           >
-            {{ $t('header.blockchain-basics') }}
+            {{ t('header.blockchain-basics') }}
           </router-link>
         </li>
 
@@ -60,10 +60,10 @@
               class="menu-link"
               @click="toggleMenu"
             >
-              {{ $t('header.binex') }}
+              {{ t('header.binex') }}
             </router-link>
             <button class="instruction-button">
-              {{ $t('header.guide') }}
+              {{ t('header.guide') }}
             </button>
           </div>
         </li>
@@ -75,16 +75,16 @@
               class="menu-link"
               @click="toggleMenu"
             >
-              {{ $t('header.vpp-documentation') }}
+              {{ t('header.vpp-documentation') }}
             </router-link>
             <button class="instruction-button">
-              {{ $t('header.guide') }}
+              {{ t('header.guide') }}
             </button>
           </div>
         </li>
         <li>
           <router-link :to="{ name: ROUTE_NAMES.events }" @click="toggleMenu">
-            {{ $t('header.events') }}
+            {{ t('header.events') }}
           </router-link>
         </li>
       </ul>
@@ -96,11 +96,12 @@
 import { ref } from 'vue'
 import { AppLogo } from '@/common'
 import { ROUTE_NAMES } from '@/enums'
-
+import { useI18n } from 'vue-i18n'
 import OpenMenuIcon from '@/assets/header-open-menu-icon.svg'
 import CloseMenuIcon from '@/assets/header-close-icon.svg'
 
 const isMenuOpen = ref(false)
+const { t } = useI18n()
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
@@ -113,7 +114,7 @@ function toggleMenu() {
   align-items: center;
   gap: toRem(10);
   padding: toRem(24) var(--app-padding-right) toRem(24) var(--app-padding-left);
-  background: var(--app-bg);
+  background: var(--background-primary-light);
   border-bottom: var(--border-primary-main);
   position: relative;
   top: 0;

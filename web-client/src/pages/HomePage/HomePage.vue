@@ -1,6 +1,5 @@
 <template>
   <div class="home-page">
-    <!-- Header Section -->
     <section class="header-section">
       <img
         :src="HeaderImage"
@@ -15,7 +14,6 @@
       </p>
     </section>
 
-    <!-- Projekte Section -->
     <section class="projects-section">
       <h2 class="projects-section__title">
         {{ t('home-page.projects') }}

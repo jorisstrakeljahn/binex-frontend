@@ -1,10 +1,15 @@
 <template>
   <section class="news-section">
     <h2 class="news-section__title">
-      {{ $t('footer.newsTitle') }}
+      {{ t('footer.newsTitle') }}
     </h2>
     <div class="news-section__list">
-      <div class="news-card" v-for="(event, index) in events" :key="index">
+      <router-link
+        v-for="(event, index) in events"
+        :key="index"
+        :to="event.link"
+        class="news-card"
+      >
         <div class="news-card__header">
           <h3 class="news-card__title">
             {{ event.title }}
@@ -14,7 +19,7 @@
         <p class="news-card__description">
           {{ event.description }}
         </p>
-      </div>
+      </router-link>
     </div>
   </section>
 
@@ -23,60 +28,59 @@
     <div class="footer-content">
       <div class="footer-column">
         <h3 class="footer-title">
-          {{ $t('footer.footerTitle') }}
+          {{ t('footer.footerTitle') }}
         </h3>
         <p class="footer-text">
-          {{ $t('footer.footerText') }}
+          {{ t('footer.footerText') }}
         </p>
       </div>
       <div class="footer-column">
         <h3 class="footer-title">
-          {{ $t('footer.contactTitle') }}
+          {{ t('footer.contactTitle') }}
         </h3>
         <p class="footer-text">
-          {{ $t('footer.contactPerson') }}
+          {{ t('footer.contactPerson') }}
         </p>
         <p class="footer-text">
-          {{ $t('footer.contactPhone') }}
+          {{ t('footer.contactPhone') }}
         </p>
         <p class="footer-text">
-          {{ $t('footer.contactEmail') }}
+          {{ t('footer.contactEmail') }}
         </p>
       </div>
     </div>
     <div class="footer-links">
       <router-link to="/imprint" class="footer-link">
-        {{ $t('footer.impressum') }}
+        {{ t('footer.impressum') }}
       </router-link>
       <span class="footer-separator">|</span>
       <router-link to="/privacy" class="footer-link">
-        {{ $t('footer.datenschutz') }}
+        {{ t('footer.datenschutz') }}
       </router-link>
     </div>
   </section>
 </template>
 
-<script lang="ts">
-export default {
-  name: 'app-footer',
-  data() {
-    return {
-      events: [
-        {
-          title: 'Binex',
-          description: 'NFT-Oberfläche ist online und kann genutzt werden',
-          date: '12.10.24',
-        },
-        {
-          title: 'Vortrag Cashlink',
-          description:
-            'Frau Dr. Jennifer Milinovic spricht über die Tokenisierung von Wertpapieren',
-          date: '13.11.24, 14 Uhr',
-        },
-      ],
-    }
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const events = [
+  {
+    title: 'Binex',
+    description: 'NFT-Oberfläche ist online und kann genutzt werden',
+    date: '12.10.24',
+    link: '/binex',
   },
-}
+  {
+    title: 'Vortrag Cashlink',
+    description:
+      'Frau Dr. Jennifer Milinovic spricht über die Tokenisierung von Wertpapieren',
+    date: '13.11.24, 14 Uhr',
+    link: '/events',
+  },
+]
 </script>
 
 <style lang="scss" scoped>
@@ -101,13 +105,15 @@ export default {
 }
 
 .news-card {
-  border: 1px solid #000;
   padding: 1rem;
   box-sizing: border-box;
-  width: calc(50% - 1rem);
+  width: calc(50% - 4rem);
   position: relative;
   background-color: #fff;
   border-radius: 12px;
+  box-shadow: #9e9e9e 0 2px 4px 0;
+  transition: transform 0.3s ease;
+  margin: 1rem;
 
   &__header {
     display: flex;
@@ -130,6 +136,10 @@ export default {
     margin-top: 0.5rem;
     font-size: 1rem;
     color: #000;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 

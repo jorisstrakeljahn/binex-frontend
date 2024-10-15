@@ -116,7 +116,14 @@
     "title": "Binex Projekt"
   },
   "vpp-documentation-page": {
-    "title": "Versuchspersonenpunkte Dokumentation"
+    "title": "VPP Dokumentation",
+    "subtitle": "Eine blockchain-basierte Anwendung zur fälschungssicheren Dokumentation von Versuchspersonenpunkten im Fach Wirtschaftspsychologie.",
+    "button-text": "Zu deinen VPPs",
+    "info-title": "Über das Projekt",
+    "info-text": "Ab Oktober 2025 werden Versuchspersonenpunkte vergeben, wenn Studierende an Studien und Umfragen anderer Studierender teilnehmen, und stellen eine wichtige Prüfungsleistung dar. Dieses System fördert die aktive Teilnahme an Forschungsprojekten und erleichtert es den Studierenden, Teilnehmer:innen für ihre eigenen Umfragen zu gewinnen, indem es ein transparentes und sicheres Anreizsystem schafft.Dafür entwickelt der Arbeitskreis DeFi ein blockchain-basiertes System zur Dokumentation der Versuchspersonenpunkte. Dieses Tool ermöglicht es Studierenden, ihre Teilnahme an wissenschaftlichen Studien und Umfragen effizient und transparent zu dokumentieren.Die Verwaltung dieser Punkte wird dezentral, sicher und nachvollziehbar auf der Blockchain abgewickelt. Studierende können ihre gesammelten Punkte digital erfassen und jederzeit abrufen, während Dozent:in und Studienorganisator:in eine zuverlässige Übersicht über den Punktestand erhalten.",
+    "guide-title": "Anleitung und Q&A",
+    "guide-title-participant": "Für Teilnehmer:innen",
+    "guide-title-organizer": "Für Umfrageersteller:innen"
   },
   "footer": {
     "newsTitle": "Neuigkeiten und Termine",
@@ -138,5 +145,9 @@
   "underConstruction": {
     "title": "Seite im Aufbau",
     "message": "Diese Seite befindet sich derzeit im Aufbau. Bitte schauen Sie später noch einmal vorbei."
+  },
+  "accordion-item": {
+    "open": "-",
+    "close": "+"
   }
 }
