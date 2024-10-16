@@ -97,7 +97,7 @@
     "binex": "Binex",
     "vpp-documentation": "VPP Doc",
     "events": "Events",
-    "guide": "Guide ↗"
+    "guide": "Guide"
   },
   "home-page": {
     "title": "Arbeitskreis Blockchain",
@@ -159,7 +159,7 @@
     "contactTitle": "Kontakt",
     "contactPerson": "Prof. Dr. Rainer Lenz",
     "contactPhone": "+49.521.106-70212",
-    "contactEmail": "ak-krypto@hsbi.de",
+    "contactEmail": "{account}{'@'}{domain}",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz"
   },

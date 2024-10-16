@@ -142,7 +142,7 @@ export default {
   &__text {
     max-width: 1200px;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     text-align: justify;
   }

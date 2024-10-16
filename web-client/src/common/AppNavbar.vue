@@ -239,7 +239,7 @@ function toggleMenu() {
 }
 
 .mobile-navigation {
-  margin-top: toRem(90);
+  margin-top: toRem(120);
 }
 
 .mobile-navigation ul {

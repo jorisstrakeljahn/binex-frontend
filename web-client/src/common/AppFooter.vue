@@ -45,7 +45,12 @@
           {{ t('footer.contactPhone') }}
         </p>
         <p class="footer-text">
-          {{ t('footer.contactEmail') }}
+          {{
+            t('footer.contactEmail', {
+              account: 'ak-krypto',
+              domain: 'hsbi.de',
+            })
+          }}
         </p>
       </div>
     </div>
@@ -138,14 +143,14 @@ const events = [
   }
 
   &__date {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #000;
   }
 
   &__description {
     line-height: 1.5rem;
     margin-top: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #000;
   }
 

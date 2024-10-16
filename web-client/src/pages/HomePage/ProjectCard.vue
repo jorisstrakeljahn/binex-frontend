@@ -56,7 +56,7 @@ export default {
   }
 
   &__description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0.4rem;
     line-height: 1.5rem;
   }

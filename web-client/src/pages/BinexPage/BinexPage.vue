@@ -173,7 +173,7 @@ const { t } = useI18n()
 
   &__text {
     font: inherit;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
@@ -194,7 +194,7 @@ const { t } = useI18n()
 
 ul li {
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   list-style-type: disc;
   margin: 0 0 2px 16px;
 }

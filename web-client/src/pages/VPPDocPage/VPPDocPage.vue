@@ -150,7 +150,7 @@ export default defineComponent({
     padding: 0.75rem 3rem;
     background-color: var(--primary-dark);
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-decoration: none;
     border-radius: 12px;
@@ -204,7 +204,7 @@ export default defineComponent({
   &__text {
     max-width: 1200px;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     text-align: justify;
   }
