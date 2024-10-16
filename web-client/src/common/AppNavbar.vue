@@ -110,10 +110,12 @@ function toggleMenu() {
 
 <style lang="scss" scoped>
 .app-navbar {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: toRem(10);
-  padding: toRem(24) var(--app-padding-right) toRem(24) var(--app-padding-left);
+  padding: toRem(32) var(--app-padding-right) toRem(24) var(--app-padding-left);
   background: var(--background-primary-light);
   border-bottom: var(--border-primary-main);
   position: relative;
@@ -128,7 +130,7 @@ function toggleMenu() {
 }
 
 .app-navbar__logo {
-  width: toRem(40);
+  width: toRem(60);
 }
 
 .spacer {
@@ -146,7 +148,7 @@ function toggleMenu() {
   text-decoration: none;
   color: #000;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   display: block;
   padding: toRem(12) toRem(10);
   border-radius: 0;
@@ -212,6 +214,10 @@ function toggleMenu() {
 }
 
 @media (max-width: 767px) {
+  .app-navbar__logo {
+    width: toRem(40);
+  }
+
   .navigation {
     display: none;
   }

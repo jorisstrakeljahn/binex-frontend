@@ -51,13 +51,14 @@ export default {
   }
 
   &__title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 0.5rem;
   }
 
   &__description {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     margin-top: 0.4rem;
+    line-height: 1.5rem;
   }
 
   &:hover {
@@ -69,6 +70,14 @@ export default {
 @media (max-width: 1024px) {
   .project-card {
     flex: 1 1 calc(50% - 2rem);
+  }
+
+  .project-card__title {
+    font-size: 1.2rem;
+  }
+
+  .project-card__description {
+    font-size: 1rem;
   }
 }
 

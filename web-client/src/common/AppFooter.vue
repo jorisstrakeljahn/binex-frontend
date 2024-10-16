@@ -50,13 +50,23 @@
       </div>
     </div>
     <div class="footer-links">
-      <router-link to="/imprint" class="footer-link">
+      <a
+        href="https://www.hsbi.de/impressum"
+        class="footer-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {{ t('footer.impressum') }}
-      </router-link>
+      </a>
       <span class="footer-separator">|</span>
-      <router-link to="/privacy" class="footer-link">
+      <a
+        href="https://www.hsbi.de/datenschutzerklaerung"
+        class="footer-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {{ t('footer.datenschutz') }}
-      </router-link>
+      </a>
     </div>
   </section>
 </template>
@@ -99,7 +109,7 @@ const events = [
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -122,31 +132,25 @@ const events = [
   }
 
   &__title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #000;
   }
 
   &__date {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #000;
   }
 
   &__description {
+    line-height: 1.5rem;
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #000;
   }
 
   &:hover {
     transform: scale(1.05);
-  }
-}
-
-/* Responsive Anpassungen */
-@media (max-width: 768px) {
-  .news-card {
-    width: 100%;
   }
 }
 
@@ -160,7 +164,7 @@ const events = [
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -172,13 +176,13 @@ const events = [
 
   .footer-title {
     color: #d9d9d9;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
   }
 
   .footer-text {
     color: #d9d9d9;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 0.25rem 0;
   }
 
@@ -201,6 +205,22 @@ const events = [
 
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
+  .news-card {
+    width: 100%;
+  }
+
+  .news-card__title {
+    font-size: 1.2rem;
+  }
+
+  .news-card__date {
+    font-size: 1rem;
+  }
+
+  .news-card__description {
+    font-size: 1rem;
+  }
+
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -209,6 +229,16 @@ const events = [
   .footer-column {
     flex: 1 1 100%;
     text-align: center;
+  }
+
+  .footer.footer-section {
+    .footer-title {
+      font-size: 1rem;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+    }
   }
 }
 </style>

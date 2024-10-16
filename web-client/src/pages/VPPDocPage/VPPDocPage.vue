@@ -139,8 +139,9 @@ export default defineComponent({
   }
 
   &__subtitle {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    max-width: 1200px;
+    font-size: 1.4rem;
+    margin: 1rem auto 0;
   }
 
   &__button {
@@ -149,7 +150,7 @@ export default defineComponent({
     padding: 0.75rem 3rem;
     background-color: var(--primary-dark);
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 500;
     text-decoration: none;
     border-radius: 12px;
@@ -176,14 +177,15 @@ export default defineComponent({
   }
 
   &__group {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     margin-bottom: 2rem;
   }
 
   &__subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
   }
 }
 
@@ -200,9 +202,9 @@ export default defineComponent({
   }
 
   &__text {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     text-align: justify;
   }
@@ -224,6 +226,10 @@ export default defineComponent({
 
   .documentation-section__subtitle {
     font-size: 1.2rem;
+  }
+
+  .info-section__text {
+    font-size: 1rem;
   }
 }
 </style>

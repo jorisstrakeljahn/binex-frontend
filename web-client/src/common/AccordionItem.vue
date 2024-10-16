@@ -45,7 +45,7 @@ export default defineComponent({
 <style scoped>
 .accordion-item {
   border-bottom: 1px solid #ccc;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -54,11 +54,11 @@ export default defineComponent({
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 1rem 0;
+  padding: 1.2rem 0 1rem;
 }
 
 .accordion-item__title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #000000;
 }
@@ -69,13 +69,29 @@ export default defineComponent({
 
 .accordion-item__content {
   padding: 0.5rem 0;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   line-height: 1.5;
+}
+
+a {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
   .accordion-item__icon {
     font-size: 1.2rem;
+  }
+
+  .accordion-item__title {
+    font-size: 1.1rem;
+  }
+
+  .accordion-item__content {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
   }
 }
 </style>

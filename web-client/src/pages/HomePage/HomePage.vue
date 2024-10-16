@@ -104,8 +104,9 @@ export default {
   }
 
   &__subtitle {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    max-width: 1200px;
+    font-size: 1.4rem;
+    margin: 1rem auto 0;
   }
 }
 
@@ -139,9 +140,9 @@ export default {
   }
 
   &__text {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     text-align: justify;
   }
@@ -164,6 +165,10 @@ export default {
   }
 
   .header-section__subtitle {
+    font-size: 1rem;
+  }
+
+  .info-section__text {
     font-size: 1rem;
   }
 }
