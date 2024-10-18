@@ -28,7 +28,7 @@
       <ul class="content-section__list">
         <li>{{ t('event-cashlink-page.text-3-1') }}</li>
         <li>{{ t('event-cashlink-page.text-3-2') }}</li>
-        <li>{{ t('event-cashlink-page.text-3-2') }}</li>
+        <li>{{ t('event-cashlink-page.text-3-3') }}</li>
       </ul>
 
       <!-- Titel 4 -->
