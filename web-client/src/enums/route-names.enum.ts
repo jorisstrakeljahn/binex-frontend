@@ -10,4 +10,5 @@ export enum ROUTE_NAMES {
   vpp = 'vpp',
   imprint = 'imprint',
   privacy = 'privacy',
+  cashlinkEvent = 'cashlink-event',
 }

@@ -62,7 +62,10 @@
             >
               {{ t('header.binex') }}
             </router-link>
-            <button class="instruction-button">
+            <button
+              class="instruction-button"
+              @click="navigateToSection(ROUTE_NAMES.binex, 'guide-section-binex')"
+            >
               {{ t('header.guide') }}
             </button>
           </div>
@@ -77,7 +80,10 @@
             >
               {{ t('header.vpp-documentation') }}
             </router-link>
-            <button class="instruction-button">
+            <button
+              class="instruction-button"
+              @click="navigateToSection(ROUTE_NAMES.vpp, 'guide-section-vpp')"
+            >
               {{ t('header.guide') }}
             </button>
           </div>
@@ -99,12 +105,18 @@ import { ROUTE_NAMES } from '@/enums'
 import { useI18n } from 'vue-i18n'
 import OpenMenuIcon from '@/assets/header-open-menu-icon.svg'
 import CloseMenuIcon from '@/assets/header-close-icon.svg'
+import { router } from '@/router'
 
 const isMenuOpen = ref(false)
 const { t } = useI18n()
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
+}
+
+function navigateToSection(routeName: string, sectionId: string) {
+  toggleMenu()
+  router.push({ name: routeName, hash: `#${sectionId}` })
 }
 </script>
 
@@ -213,7 +225,7 @@ function toggleMenu() {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .app-navbar__logo {
     width: toRem(40);
   }

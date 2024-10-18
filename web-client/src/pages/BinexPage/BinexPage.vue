@@ -13,7 +13,10 @@
     </section>
 
     <!-- Content Section -->
-    <section class="content-section">
+    <!-- Hier noch aufpassen, ich muss hier noch später einen Guide
+    einbauen, damit der Mobile Button auch Sinn macht.
+    Vielleicht zum Ende der Seite oder so-->
+    <section id="guide-section-binex" class="content-section">
       <!-- Titel 2 -->
       <h2 class="content-section__subtitle">
         {{ t('binex-page.titel-2') }}

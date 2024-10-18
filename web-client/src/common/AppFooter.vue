@@ -93,7 +93,7 @@ const events = [
     description:
       'Frau Dr. Jennifer Milinovic spricht über die Tokenisierung von Wertpapieren',
     date: '13.11.24, 14 Uhr',
-    link: '/events',
+    link: '/events/cashlink',
   },
 ]
 </script>

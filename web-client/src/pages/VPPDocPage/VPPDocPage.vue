@@ -18,7 +18,7 @@
     </section>
 
     <!-- Dokumentation Section -->
-    <section class="documentation-section">
+    <section id="guide-section-vpp" class="documentation-section">
       <h2 class="documentation-section__title">
         {{ t('vpp-documentation-page.guide-title') }}
       </h2>

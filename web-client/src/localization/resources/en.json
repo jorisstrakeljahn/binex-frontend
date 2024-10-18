@@ -107,7 +107,25 @@
     "info-text": "Trotz wachsender Bedeutung der Blockchain-Technologie ist das Wissen über die Technologie und deren vielfältigen Anwendungsmöglichkeiten bisher in den Curricular der Hochschulstudiengänge weit unterrepräsentiert. Dies mag daran liegen, dass die Blockchain-Technologie für Dozenten kein einfach zu vermittelnder Lehrinhalt ist. Verlangt sie doch als Querschnittstechnologie von den Lehrenden ein fundiertes interdisziplinäres Wissen in Datenbankanwendungen, Kryptographie, Prozessorganisation und über deren vielfältigen Anwendungsmöglichkeiten in der Ökonomie. Daher bleibt für Studierende die Blockchain-, Token- und Kryptowelt meist sehr abstrakt, ohne persönlichen Zugang und die Möglichkeit des Sammelns von eigenen Erfahrungen. Studierenden und Lehrenden fehlt ein konkretes Anwendungsbeispiel für die Nutzung von Token auf der Blockchain. Dies will der Arbeitskreis DeFi verändern."
   },
   "events-page": {
-    "title": "Veranstaltungen"
+    "title": "Veranstaltungen",
+    "subtitle": "Neben den regelmäßigen Treffen des Arbeitskreis veranstalten wir jedes Semester ein Event mit Vorträgen zu aktuellen Blockchain-Themen, geben Workshops und informieren in verschiedenen Kontexten zu unserem Themen.",
+    "events": "Zukünftige Termine",
+    "info-title": "Arbeitskreistreffen",
+    "info-text": "Wir freuen uns, neue Mitglieder im Arbeitskreis begrüßen zu dürfen. Um zum Verteiler für die Abstimmung der Termine hinzugefügt zu werden E-Mail an {account}{'@'}{domain} .\nWir treffen uns im HSBI Hauptgebäude in Konfernzraum B339."
+   },
+  "event-cashlink-page": {
+    "title": "Wertpapiere im digitalen Zeitalter: von Security Token zu Kryptowertpapieren",
+    "description": "Erfahren Sie, was Kryptowertpapiere von traditionellen Wertpapieren unterscheidet und wie sie das Finanzsystem beeinflussen. Wir beleuchten das rechtliche Umfeld, die technologische Innovation und die Bedeutung für die Finanzlandschaft.",
+    "titel-2": "Hauptreferentin",
+    "text-2": "Dr. Jenni Milinovic ist Juristin mit Spezialisierung im Bankenaufsichtsrecht und arbeitet als Chief Regulatory Officer in einem Finanzdienstleistungsinstitut, das innovative Lösungen im Bereich Kryptowertpapiere entwickelt.",
+    "titel-3": "Programm",
+    "text-3-1": "Datum: 27. November 2024",
+    "text-3-2": "Uhrzeit: 14:30 Uhr bis ca. 16:30 Uhr",
+    "text-3-3": "Ort: Hochschule Bielefeld, Audimax",
+    "titel-4": "Ablauf",
+    "text-4-1": "Wir laden euch herzlich ein zu unserer Veranstaltung des Arbeitskreises „Blockchain“, die ohne Anmeldung offen für alle Interessierten ist. Los geht es mit einer kurzen Einführung ins Thema durch die Veranstalter, gefolgt von einem spannenden Vortrag von Dr. Jenni Milinovic (Dauer: ca. 20–30 Minuten). Im Anschluss habt ihr die Möglichkeit, in einer Diskussions- und Fragerunde (Dauer: ca. 20–30 Minuten) eure Fragen zu stellen und in den Austausch zu treten.",
+    "text-4-2": "Nach einer etwa 30-minütigen Pause, in der für Essen und Trinken gesorgt ist, stellen wir euch die aktuellen Projekte und Entwicklungen des Arbeitskreises „Blockchain“ vor (Dauer: ca. 30 Minuten).",
+    "text-4-3": "Zum Abschluss habt ihr die Möglichkeit, euch in lockerer Atmosphäre mit den Referenten und anderen Teilnehmern auszutauschen und zu vernetzen. Kommt gerne vorbei - wir freuen uns auf euch!"
   },
   "blockchain-basics-page": {
     "title": "Blockchain Basics",
