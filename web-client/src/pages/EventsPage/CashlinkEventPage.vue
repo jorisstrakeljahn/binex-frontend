@@ -72,14 +72,14 @@ const { t } = useI18n()
   }
 
   &__title {
-    max-width: 1200px;
+    max-width: 1000px;
     line-height: 1.6;
     font-size: 2rem;
     margin: 1rem auto 1.5rem;
   }
 
   &__subtitle {
-    max-width: 1200px;
+    max-width: 1000px;
     font-size: 1.2rem;
     margin: 1rem auto 1rem;
   }
@@ -87,7 +87,7 @@ const { t } = useI18n()
 
 /* Content Section Styles */
 .content-section {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: left;
