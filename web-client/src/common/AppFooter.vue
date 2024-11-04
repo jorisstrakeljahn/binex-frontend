@@ -114,7 +114,7 @@ const events = [
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 }
@@ -169,7 +169,7 @@ const events = [
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -181,13 +181,13 @@ const events = [
 
   .footer-title {
     color: #d9d9d9;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
   }
 
   .footer-text {
     color: #d9d9d9;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0.25rem 0;
   }
 
@@ -212,6 +212,7 @@ const events = [
 @media (max-width: 768px) {
   .news-card {
     width: 100%;
+    margin: 0;
   }
 
   .news-card__title {

@@ -39,7 +39,9 @@ export default {
   display: block;
   flex: 1 1 calc(33.333% - 2rem);
   box-sizing: border-box;
-  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: #9e9e9e 0 2px 4px 0;
+  max-width: 400px;
   margin: 2rem;
   transition: transform 0.2s;
 
@@ -47,18 +49,23 @@ export default {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 8px;
+    padding: 0.5rem;
+    border-radius: 20px;
   }
 
   &__title {
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1.4rem;
-    margin-top: 0.5rem;
   }
 
   &__description {
-    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.4rem;
-    line-height: 1.5rem;
+    line-height: 1.1rem;
   }
 
   &:hover {
@@ -70,6 +77,7 @@ export default {
 @media (max-width: 1024px) {
   .project-card {
     flex: 1 1 calc(50% - 2rem);
+    margin-top: 1rem;
   }
 
   .project-card__title {
@@ -77,7 +85,7 @@ export default {
   }
 
   .project-card__description {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 

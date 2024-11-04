@@ -1,5 +1,5 @@
 <template>
-  <div class="event-page">
+  <div class="event-page" lang="de">
     <!-- Header Section -->
     <section class="header-section">
       <h1 class="header-section__title">
@@ -103,6 +103,8 @@ const { t } = useI18n()
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    text-align: justify;
+    hyphens: auto;
   }
 
   &__list {

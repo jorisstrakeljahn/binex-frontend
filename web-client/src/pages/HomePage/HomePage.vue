@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page">
+  <div class="home-page" lang="de">
     <section class="header-section">
       <img
         :src="HeaderImage"
@@ -112,7 +112,7 @@ export default {
 
 /* Projekte Section Styles */
 .projects-section {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0;
 
   &__title {
     font-size: 1.8rem;
@@ -123,7 +123,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
   }
 }
 
@@ -143,8 +142,9 @@ export default {
     max-width: 1000px;
     width: 100%;
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: justify;
+    hyphens: auto;
   }
 }
 

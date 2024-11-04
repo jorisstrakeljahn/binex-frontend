@@ -1,5 +1,5 @@
 <template>
-  <div class="events-page">
+  <div class="events-page" lang="de">
     <section class="header-section">
       <img
         :src="HeaderImage"
@@ -105,6 +105,8 @@ export default {
   &__subtitle {
     max-width: 1000px;
     font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: justify;
     margin: 1rem auto 0;
   }
 }
@@ -144,6 +146,7 @@ export default {
     font-size: 1.2rem;
     line-height: 1.6;
     text-align: justify;
+    hyphens: auto;
   }
 }
 

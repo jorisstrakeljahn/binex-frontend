@@ -61,14 +61,13 @@ export default defineComponent({
 
 .event-card {
   margin-top: 2rem;
-  border: 1px solid #000;
   border-radius: 12px;
   overflow: hidden;
   background-color: #fff;
   max-width: 400px;
   width: 100%;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: #9e9e9e 0 2px 4px 0;
   transition: transform 0.3s;
   position: relative;
 }

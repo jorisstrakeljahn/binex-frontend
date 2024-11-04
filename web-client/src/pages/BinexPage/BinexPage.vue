@@ -1,5 +1,5 @@
 <template>
-  <div class="binex-page">
+  <div class="binex-page" lang="de">
     <!-- Header Section -->
     <section class="header-section">
       <img
@@ -169,6 +169,7 @@ const { t } = useI18n()
 
   &__subtitle {
     font-size: 1.8rem;
+    line-height: 1.4;
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
@@ -179,6 +180,7 @@ const { t } = useI18n()
     line-height: 1.6;
     margin-bottom: 1rem;
     text-align: justify;
+    hyphens: auto;
   }
 
   &__list {
@@ -235,6 +237,11 @@ ul li {
 
   .content-section__text {
     font-size: 1rem;
+  }
+
+  .content-section__caption {
+    font-size: 1rem;
+    line-height: 1.1;
   }
 
   ul li {

@@ -1,5 +1,5 @@
 <template>
-  <div class="vpp-page">
+  <div class="vpp-page" lang="de">
     <section class="header-section">
       <img
         :src="HeaderImage"
@@ -141,6 +141,9 @@ export default defineComponent({
   &__subtitle {
     max-width: 1000px;
     font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: justify;
+    hyphens: auto;
     margin: 1rem auto 0;
   }
 
@@ -148,7 +151,7 @@ export default defineComponent({
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 3rem;
-    background-color: var(--primary-dark);
+    background-color: #000000;
     color: #fff;
     font-size: 1.3rem;
     font-weight: 500;
@@ -207,6 +210,7 @@ export default defineComponent({
     font-size: 1.2rem;
     line-height: 1.6;
     text-align: justify;
+    hyphens: auto;
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="vpp-page">
+  <div class="vpp-page" lang="de">
     <section class="header-section">
       <img
         :src="HeaderImage"
@@ -156,6 +156,9 @@ export default defineComponent({
   &__subtitle {
     max-width: 1000px;
     font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: justify;
+    hyphens: auto;
     margin: 1rem auto 0;
   }
 }
