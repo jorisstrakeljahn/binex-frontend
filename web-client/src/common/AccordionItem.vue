@@ -3,7 +3,7 @@
     <div class="accordion-item__header" @click="toggle">
       <span class="accordion-item__title">{{ title }}</span>
       <span class="accordion-item__icon">
-        {{ isOpen ? t('accordion-item.open') : t('accordion-item.open') }}
+        {{ isOpen ? t('accordion-item.open') : t('accordion-item.close') }}
       </span>
     </div>
     <div v-if="isOpen" class="accordion-item__content">

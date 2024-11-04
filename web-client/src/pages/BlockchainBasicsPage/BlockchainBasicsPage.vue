@@ -142,8 +142,8 @@ export default defineComponent({
 
   &__image {
     max-width: 700px;
-    width: 100%;
-    height: auto;
+    width: 480px;
+    height: 320px;
     border-radius: 8px;
     object-fit: cover;
   }
@@ -154,7 +154,7 @@ export default defineComponent({
   }
 
   &__subtitle {
-    max-width: 1200px;
+    max-width: 1000px;
     font-size: 1.4rem;
     margin: 1rem auto 0;
   }
@@ -174,7 +174,7 @@ export default defineComponent({
   }
 
   &__group {
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -189,6 +189,11 @@ export default defineComponent({
 @media (max-width: 768px) {
   .header-section__title {
     font-size: 1.5rem;
+  }
+
+  .header-section__image {
+    width: 100%;
+    height: auto;
   }
 
   .header-section__subtitle {

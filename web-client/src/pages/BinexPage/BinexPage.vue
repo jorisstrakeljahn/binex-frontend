@@ -148,9 +148,8 @@ const { t } = useI18n()
   padding: 2rem 1rem 0;
 
   &__image {
-    max-width: 700px;
-    width: 100%;
-    height: auto;
+    width: 480px;
+    height: 320px;
     border-radius: 8px;
     object-fit: cover;
   }
@@ -163,7 +162,7 @@ const { t } = useI18n()
 
 /* Content Section Styles */
 .content-section {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: left;
@@ -179,6 +178,7 @@ const { t } = useI18n()
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    text-align: justify;
   }
 
   &__list {
@@ -222,6 +222,11 @@ ul li {
 @media (max-width: 768px) {
   .header-section__title {
     font-size: 1.5rem;
+  }
+
+  .header-section__image {
+    width: 100%;
+    height: auto;
   }
 
   .content-section__subtitle {

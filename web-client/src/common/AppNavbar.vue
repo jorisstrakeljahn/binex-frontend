@@ -64,7 +64,9 @@
             </router-link>
             <button
               class="instruction-button"
-              @click="navigateToSection(ROUTE_NAMES.binex, 'guide-section-binex')"
+              @click="
+                navigateToSection(ROUTE_NAMES.binex, 'guide-section-binex')
+              "
             >
               {{ t('header.guide') }}
             </button>
@@ -157,6 +159,7 @@ function navigateToSection(routeName: string, sectionId: string) {
 }
 
 .navigation a {
+  position: relative;
   text-decoration: none;
   color: #000;
   font-weight: bold;
@@ -164,6 +167,40 @@ function navigateToSection(routeName: string, sectionId: string) {
   display: block;
   padding: toRem(12) toRem(10);
   border-radius: 0;
+  transition: font-size 0.3s ease;
+}
+
+.navigation a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: all 0.5s ease;
+}
+
+.navigation a:hover::before,
+.navigation .router-link-active::before {
+  left: 0;
+  width: 100%;
+}
+
+.navigation .router-link-active {
+  position: relative;
+}
+
+.navigation .router-link-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 2px;
 }
 
 .mobile-navigation .highlight-item a {

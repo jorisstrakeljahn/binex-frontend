@@ -104,7 +104,7 @@ export default {
   }
 
   &__subtitle {
-    max-width: 1200px;
+    max-width: 1000px;
     font-size: 1.4rem;
     margin: 1rem auto 0;
   }
@@ -140,7 +140,7 @@ export default {
   }
 
   &__text {
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     font-size: 1.2rem;
     line-height: 1.6;

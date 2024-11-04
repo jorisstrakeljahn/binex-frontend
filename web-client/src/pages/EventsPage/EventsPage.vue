@@ -91,8 +91,8 @@ export default {
   padding: 2rem 1rem;
 
   &__image {
-    max-width: 100%;
-    height: auto;
+    width: 480px;
+    height: 320px;
     border-radius: 8px;
     object-fit: cover;
   }
@@ -103,7 +103,7 @@ export default {
   }
 
   &__subtitle {
-    max-width: 1200px;
+    max-width: 1000px;
     font-size: 1.4rem;
     margin: 1rem auto 0;
   }
@@ -139,7 +139,7 @@ export default {
   }
 
   &__text {
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     font-size: 1.2rem;
     line-height: 1.6;
@@ -161,6 +161,11 @@ export default {
 @media (max-width: 768px) {
   .header-section__title {
     font-size: 1.5rem;
+  }
+
+  .header-section__image {
+    width: 100%;
+    height: auto;
   }
 
   .header-section__subtitle {
