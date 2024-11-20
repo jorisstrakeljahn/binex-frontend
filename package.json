@@ -14,6 +14,8 @@
     "start-web-client": "npm run copy-file-win && npm --prefix ./web-client run start"
   },
   "dependencies": {
+    "@opengsn/contracts": "^3.0.0-beta.6",
+    "@openzeppelin/contracts": "^5.1.0",
     "cross-env": "^7.0.3"
   }
 }

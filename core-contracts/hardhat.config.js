@@ -73,7 +73,7 @@ module.exports = {
     alphaSort: false,
     disambiguatePaths: false,
     runOnCompile: true,
-    strict: false,
+    strict: true,
   },
   gasReporter: {
     enabled: false,

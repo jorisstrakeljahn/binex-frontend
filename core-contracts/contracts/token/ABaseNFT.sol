@@ -69,4 +69,12 @@ abstract contract ABaseNFT is ISimpleNFT, Ownable, ERC721Enumerable, ERC721URISt
     ) internal virtual override(ERC721Enumerable, ERC721) {
         super._beforeTokenTransfer(from, to, tokenId, batchSize);
     }
+
+    function _msgSender() internal view virtual override(Context) returns (address) {
+        return super._msgSender();
+    }
+
+    function _msgData() internal view virtual override(Context) returns (bytes calldata) {
+        return super._msgData();
+    }
 }
