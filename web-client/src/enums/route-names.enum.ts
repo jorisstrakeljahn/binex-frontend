@@ -1,6 +1,14 @@
 export enum ROUTE_NAMES {
   app = 'app',
   connect = 'connect',
-  nfts = 'nfts',
-  nftDetails = 'nft-details',
+  vppNFTs = 'nfts',
+  vppNFTDetails = 'nft-details',
+  home = 'home',
+  binex = 'binex',
+  blockchainBasics = 'blockchain-basics',
+  events = 'events',
+  vpp = 'vpp',
+  imprint = 'imprint',
+  privacy = 'privacy',
+  cashlinkEvent = 'cashlink-event',
 }

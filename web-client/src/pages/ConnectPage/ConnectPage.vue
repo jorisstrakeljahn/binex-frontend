@@ -30,7 +30,7 @@
         v-else-if="!provider.isConnected"
         :text="$t('connect-page.connect-btn')"
         :icon-left="$icons.metamask"
-        @click="provider.connect"
+        @click="connect"
       />
       <app-button
         v-else
@@ -49,9 +49,29 @@ import { AppButton } from '@/common'
 import { useWeb3ProvidersStore } from '@/store'
 import { DEFAULT_CHAIN, config } from '@/config'
 import { isMetamaskExtension } from '@/helpers'
+import { useRouter, useRoute } from 'vue-router'
+import { watch } from 'vue'
 
 const METAMASK_DOWNLOAD_LINK = 'https://metamask.io/download'
-const { provider } = useWeb3ProvidersStore()
+const router = useRouter()
+const route = useRoute()
+const { provider, isValidChain } = useWeb3ProvidersStore()
+
+const connect = async () => {
+  await provider.connect()
+}
+
+watch(
+  [() => provider.isConnected, () => isValidChain],
+  ([isConnected, validChain]) => {
+    if (isConnected && validChain) {
+      const redirectParam = route.query.redirect
+      const redirectPath =
+        (Array.isArray(redirectParam) ? redirectParam[0] : redirectParam) || '/'
+      router.push(redirectPath)
+    }
+  },
+)
 </script>
 
 <style lang="scss" scoped>

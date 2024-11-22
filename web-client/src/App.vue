@@ -1,16 +1,7 @@
 <template>
   <div v-if="isAppInitialized" class="app__container">
-    <router-view v-slot="{ Component }">
-      <app-navbar v-if="isValidChain && provider.isConnected" />
-      <transition name="fade" mode="out-in">
-        <component
-          v-if="isValidChain && provider.isConnected"
-          class="app__main"
-          :is="Component"
-        />
-        <connect-page v-else class="app__main" />
-      </transition>
-    </router-view>
+    <app-navbar />
+    <router-view />
   </div>
   <loader v-else class="app__loader" />
 </template>
@@ -22,15 +13,11 @@ import { ref } from 'vue'
 import { useNotifications } from '@/composables'
 import { useWeb3ProvidersStore, useErc721Store } from '@/store'
 import { config } from '@config'
-import { storeToRefs } from 'pinia'
-import ConnectPage from '@/pages/ConnectPage/ConnectPage.vue'
 
 const isAppInitialized = ref(false)
 const web3ProvidersStore = useWeb3ProvidersStore()
 
 const { erc721 } = useErc721Store()
-
-const { provider, isValidChain } = storeToRefs(useWeb3ProvidersStore())
 
 const init = async () => {
   isAppInitialized.value = false
@@ -56,7 +43,7 @@ init()
   grid-template-rows: 1fr max-content;
   grid-template-rows: toRem(85) 1fr max-content;
   flex: 1;
-  background: var(--app-bg);
+  background: var(--background-primary-light);
 
   @include respond-to(small) {
     grid-template-rows: 1fr max-content;
