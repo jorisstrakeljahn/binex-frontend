@@ -3,7 +3,7 @@ pragma solidity ^0.8.19;
 
 import "./token/ABaseNFT.sol";
 
-contract SimpleNFT is ABaseNFT {
+contract BinexNFT is ABaseNFT {
     mapping(address => bool) public maintainers;
 
     constructor(string memory name, string memory symbol) ABaseNFT(name, symbol) {}
@@ -46,7 +46,13 @@ contract SimpleNFT is ABaseNFT {
     ) internal override(ABaseNFT) {
         super._beforeTokenTransfer(from, to, tokenId, batchSize);
 
-        // TODO: your code goes here
-
+        if (from != address(0) && to != address(0)) {
+            revert("BinexNFT: Transfers are not allowed");
+        }
     }
+
+    function exists(uint256 tokenId) public view returns (bool) {
+        return _exists(tokenId);
+    }
+
 }
