@@ -14,24 +14,20 @@
       <span class="nfts-page-item__title" :title="props.title">
         {{ props.title }}
       </span>
-      <svg
+      <!-- Neues Icon -->
+      <img
         @click.stop="copyToClipboard(props.title)"
         class="nfts-page-item__copy-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        viewBox="0 0 16 16"
-      >
-        <path d="M10 1.5H4a1 1 0 0 0-1 1v10.5h1V2.5h6V1.5z"/>
-        <path d="M11 3.5H5a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.5a1 1 0 0 0-1-1z"/>
-        <path d="M10.5 6a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5z"/>
-      </svg>
+        :src="ClipboardCopyIcon"
+        alt="copy"
+      />
     </div>
   </router-link>
 </template>
 
 <script lang="ts" setup>
+import ClipboardCopyIcon from '@/assets/icons/clipboard-copy-icon.svg'
+
 const props = withDefaults(
   defineProps<{
     title?: string
@@ -112,17 +108,17 @@ const copyToClipboard = async (text: string) => {
   overflow: hidden;
   text-overflow: ellipsis;
   flex: 1;
-  margin-right: toRem(8);
 }
 
 .nfts-page-item__copy-icon {
   flex-shrink: 0;
   cursor: pointer;
-  color: var(--text-secondary-main);
-  transition: color 0.3s;
+  width: toRem(24);
+  height: toRem(24);
+  transition: opacity 0.5s;
 
   &:hover {
-    color: var(--text-primary-main);
+    opacity: 0.8;
   }
 }
 
