@@ -103,5 +103,7 @@ loadNftData()
   flex-direction: column;
   gap: toRem(30);
   width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 </style>

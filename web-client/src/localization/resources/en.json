@@ -134,6 +134,7 @@
   },
   "binex-page": {
     "title": "Binex Projekt",
+    "button-text": "Zur Binex App",
     "titel-2": "Problemstellung: Blockchain und Krypto in der Lehre",
     "text-2": "Trotz wachsender Bedeutung der Blockchain-Technologie ist das Wissen über die Technologie und deren vielfältigen Anwendungsmöglichkeiten bisher in den Curricular der Hochschulstudiengänge weitgehend unterrepräsentiert. Dies mag daran liegen, dass die Blockchain-Technologie für Dozenten kein einfach zu vermittelnder Lehrinhalt ist. Verlangt sie doch als Querschnittstechnologie von den Lehrenden ein fundiertes interdisziplinäres Wissen in Datenbankanwendungen, Kryptographie, Prozessorganisation und über deren vielfältigen Anwendungsmöglichkeiten in der Ökonomie. daher bleibt für Studierenden die Blockchain-, Token- und Kryptowelt meist sehr abstrakt, ohne persönlichen Zugang und die Möglichkeit des Sammelns von eigenen Erfahrungen. Studierenden und Lehrenden fehlt ein konkretes Anwendungsbeispiel für die Nutzung von Token auf der Blockchain. Dies soll sich mit der Entwicklung eines blockchain-basierten Spiels für Studierende der HSBI ändern.",
     "titel-3": "Idee: NFTs und Blockchain als Spiel für HSBI-Studierende",

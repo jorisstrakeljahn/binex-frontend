@@ -1,6 +1,6 @@
 <template>
   <div v-if="isAppInitialized" class="app__container">
-    <app-navbar />
+    <app-navbar v-if="!hideNavbar" />
     <router-view />
   </div>
   <loader v-else class="app__loader" />
@@ -9,15 +9,20 @@
 <script lang="ts" setup>
 import { Loader, AppNavbar } from '@/common'
 import { ErrorHandler } from '@/helpers/error-handler'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useNotifications } from '@/composables'
 import { useWeb3ProvidersStore, useErc721Store } from '@/store'
 import { config } from '@config'
+import { useRoute } from 'vue-router'
 
 const isAppInitialized = ref(false)
 const web3ProvidersStore = useWeb3ProvidersStore()
 
 const { erc721 } = useErc721Store()
+const route = useRoute()
+
+// Computed Property zur Überprüfung des Meta-Felds
+const hideNavbar = computed(() => route.meta.hideNavbar === true)
 
 const init = async () => {
   isAppInitialized.value = false

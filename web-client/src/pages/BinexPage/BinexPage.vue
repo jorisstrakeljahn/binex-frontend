@@ -10,6 +10,9 @@
       <h1 class="header-section__title">
         {{ t('binex-page.title') }}
       </h1>
+      <router-link to="/binex/nfts" class="header-section__button">
+        {{ t('binex-page.button-text') }}
+      </router-link>
     </section>
 
     <!-- Content Section -->
@@ -157,6 +160,24 @@ const { t } = useI18n()
   &__title {
     font-size: 2rem;
     margin-top: 1.5rem;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 3rem;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    opacity: 0.8;
+
+    &:hover {
+      transform: scale(1.08);
+    }
   }
 }
 

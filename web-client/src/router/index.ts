@@ -45,21 +45,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/pages/VPPDocPage'),
   },
   {
-    path: '/vpp/nfts',
+    path: '/binex/nfts',
     name: ROUTE_NAMES.vppNFTs,
     component: () => import('@/pages/NftsPage'),
-    meta: { requiresMetaMask: true },
+    meta: { requiresMetaMask: true, hideNavbar: true },
   },
   {
-    path: '/vpp/nfts/:id',
+    path: '/binex/nfts/:id',
     name: ROUTE_NAMES.vppNFTDetails,
     component: () => import('@/pages/NftDetailsPage'),
-    meta: { requiresMetaMask: true },
-  },
-  {
-    path: '/imprint',
-    name: ROUTE_NAMES.imprint,
-    component: () => import('@/pages/ImprintPage'),
+    meta: { requiresMetaMask: true, hideNavbar: true },
   },
   {
     path: '/privacy',

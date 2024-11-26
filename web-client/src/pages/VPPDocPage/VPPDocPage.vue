@@ -12,9 +12,6 @@
       <p class="header-section__subtitle">
         {{ t('vpp-documentation-page.subtitle') }}
       </p>
-      <router-link to="/vpp/nfts" class="header-section__button">
-        {{ t('vpp-documentation-page.button-text') }}
-      </router-link>
     </section>
 
     <!-- Dokumentation Section -->

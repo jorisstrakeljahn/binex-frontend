@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "lodash": "^4.17.21",
     "vue-i18n": "^9.14.1"
   }
 }

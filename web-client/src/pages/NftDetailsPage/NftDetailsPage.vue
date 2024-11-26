@@ -3,7 +3,7 @@
     <app-button
       scheme="default"
       class="nft-details-page__back-btn"
-      :route="{ name: $routes.nfts }"
+      :route="{ name: $routes.vppNFTs }"
       :icon-left="$icons.chevronLeft"
       :text="$t('nft-details-page.back-btn')"
     />
@@ -40,7 +40,6 @@ import { NftDetails } from '@/types'
 import { useRoute } from 'vue-router'
 import { config } from '@config'
 import NftDetailsPageDescription from './NftDetailsPageDescription.vue'
-
 const route = useRoute()
 const { erc721 } = useErc721Store()
 const nftDetails = ref<NftDetails | undefined>()
@@ -84,6 +83,8 @@ init()
   display: flex;
   flex-direction: column;
   gap: toRem(20);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nft-details-page__back-btn {
