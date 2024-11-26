@@ -52,7 +52,8 @@
   },
   "nfts-page": {
     "loading-error-msg": "Oops, something went wrong",
-    "no-data-msg": "Empty data, please add new"
+    "no-data-msg": "Empty data, please add new",
+    "title": "NFT-Spiel-Oberfläche"
   },
   "nfts-page-actions": {
     "search-placeholder": "Search by address",
@@ -182,12 +183,6 @@
     "impressum": "Impressum",
     "datenschutz": "Datenschutz"
   },
-  "imprint-page": {
-    "title": "Impressum"
-  },
-  "privacy-page": {
-    "title": "Datenschutz"
-  },
   "underConstruction": {
     "title": "Seite im Aufbau",
     "message": "Diese Seite befindet sich derzeit im Aufbau. Bitte schauen Sie später noch einmal vorbei."
@@ -195,5 +190,13 @@
   "accordion-item": {
     "open": "-",
     "close": "+"
-  }
+  },
+  "nfts-page-claim-modal": {
+    "claim-title": "NFT für deine Veranstaltung",
+    "code-title": "Veranstaltungscode",
+    "code-placeholder": "Gib deinen Code ein",
+    "claim-button": "NFT erhalten"
+  },
+  "nfts-page-loading-error-msg": "Fehler beim Laden der NFTs. Bitte versuche es später erneut.",
+  "nfts-page-no-data-msg": "Keine NFTs verfügbar."
 }

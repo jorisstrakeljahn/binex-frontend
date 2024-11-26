@@ -21,7 +21,7 @@ const props = defineProps<{
 <style lang="scss" scoped>
 .nfts-page-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 450px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   gap: toRem(20);
   justify-content: left;
   max-width: 100%;

@@ -107,6 +107,12 @@ const closeModal = () => {
   border-radius: toRem(15);
   box-shadow: var(--shadow-primary);
   background: var(--app-bg-tertiary);
+
+  @media (max-width: 768px) {
+    max-width: 350px;
+    padding: toRem(32) var(--app-padding-right) toRem(32)
+      var(--app-padding-left);
+  }
 }
 
 .nfts-page-mint-modal__title {
@@ -124,6 +130,10 @@ const closeModal = () => {
   gap: toRem(10);
   width: toRem(400);
   margin-bottom: toRem(24);
+
+  @media (max-width: 768px) {
+    max-width: 300px;
+  }
 }
 
 .nfts-page-mint-modal__input-title {

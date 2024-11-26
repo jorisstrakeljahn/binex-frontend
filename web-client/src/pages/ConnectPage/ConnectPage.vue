@@ -94,6 +94,11 @@ watch(
 .connect-page__title {
   font-size: toRem(48);
   color: var(--text-primary-main);
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: toRem(36);
+  }
 }
 
 .connect-page__subtitle {
@@ -102,6 +107,16 @@ watch(
   color: var(--text-secondary-main);
   max-width: toRem(700);
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: toRem(14);
+    max-width: toRem(500);
+  }
+
+  @media (max-width: 480px) {
+    font-size: toRem(12);
+    max-width: toRem(300);
+  }
 }
 
 .connect-page__info {
@@ -114,15 +129,51 @@ watch(
   box-shadow: 0 toRem(4) toRem(40) var(--shadow-primary);
   border-radius: toRem(16);
   min-width: toRem(600);
+
+  @media (max-width: 768px) {
+    min-width: 90%;
+    padding: toRem(24);
+  }
+
+  @media (max-width: 480px) {
+    min-width: 100%;
+    padding: toRem(16);
+  }
 }
 
 .connect-page__info-title {
   font-weight: 500;
   font-size: toRem(40);
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: toRem(28);
+  }
 }
 
 .connect-page__info-subtitle {
   color: var(--text-secondary-main);
   font-size: toRem(16);
+
+  @media (max-width: 768px) {
+    font-size: toRem(14);
+  }
+
+  @media (max-width: 480px) {
+    font-size: toRem(12);
+  }
+}
+
+.app-button {
+  width: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: toRem(300);
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 }
 </style>
