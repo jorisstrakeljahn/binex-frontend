@@ -11,6 +11,7 @@
     <p class="under-construction-text">
       {{ t('underConstruction.message') }}
     </p>
+    <img :src="EventImage" alt="Event 1" class="under-construction-image" />
   </div>
   <app-footer />
 </template>
@@ -18,6 +19,7 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n'
 import WorkInProgressImage from '@/assets/work-in-progress-image.svg'
+import EventImage from '@/assests/1-binex-nft-event-blockchain-trifft-finance.jpeg'
 import AppFooter from '@/common/AppFooter.vue'
 
 export default {
@@ -32,6 +34,7 @@ export default {
   data() {
     return {
       WorkInProgressImage,
+      EventImage,
     }
   },
 }
