@@ -1,9 +1,14 @@
 <template>
   <div class="nft-details-page">
+    <nfts-page-actions
+      :owner="nftDetails?.owner"
+      @save="init"
+      @filter="filterNfts"
+    />
     <app-button
       scheme="default"
       class="nft-details-page__back-btn"
-      :route="{ name: $routes.nfts }"
+      :route="{ name: $routes.vppNFTs }"
       :icon-left="$icons.chevronLeft"
       :text="$t('nft-details-page.back-btn')"
     />
@@ -40,12 +45,13 @@ import { NftDetails } from '@/types'
 import { useRoute } from 'vue-router'
 import { config } from '@config'
 import NftDetailsPageDescription from './NftDetailsPageDescription.vue'
-
 const route = useRoute()
 const { erc721 } = useErc721Store()
 const nftDetails = ref<NftDetails | undefined>()
 const isLoaded = ref(false)
 const isLoadFailed = ref(false)
+import NftsPageActions from '@/pages/NftsPage/NftsPageActions.vue'
+import { router } from '@/router'
 
 const init = async () => {
   isLoaded.value = false
@@ -76,6 +82,12 @@ const init = async () => {
   isLoaded.value = true
 }
 
+const filterNfts = (address: string) => {
+  if (address) {
+    router.push({ name: 'NftsPage', query: { search: address } })
+  }
+}
+
 init()
 </script>
 
@@ -84,9 +96,16 @@ init()
   display: flex;
   flex-direction: column;
   gap: toRem(20);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .nft-details-page__back-btn {
-  max-height: toRem(30);
+  margin: 0 0 0 var(--app-padding-left);
+  max-height: toRem(50);
+
+  @media (max-width: 768px) {
+    margin: 0 0 0 0;
+  }
 }
 </style>

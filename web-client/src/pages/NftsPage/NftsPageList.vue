@@ -21,11 +21,11 @@ const props = defineProps<{
 <style lang="scss" scoped>
 .nfts-page-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   gap: toRem(20);
-
-  @include respond-to(tablet) {
-    grid-template-columns: 1fr;
-  }
+  justify-content: left;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--app-padding-right) 0 var(--app-padding-left);
 }
 </style>

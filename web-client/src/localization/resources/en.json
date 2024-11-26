@@ -52,7 +52,8 @@
   },
   "nfts-page": {
     "loading-error-msg": "Oops, something went wrong",
-    "no-data-msg": "Empty data, please add new"
+    "no-data-msg": "Empty data, please add new",
+    "title": "NFT-Spiel-Oberfläche"
   },
   "nfts-page-actions": {
     "search-placeholder": "Search by address",
@@ -134,6 +135,7 @@
   },
   "binex-page": {
     "title": "Binex Projekt",
+    "button-text": "Zur Binex App",
     "titel-2": "Problemstellung: Blockchain und Krypto in der Lehre",
     "text-2": "Trotz wachsender Bedeutung der Blockchain-Technologie ist das Wissen über die Technologie und deren vielfältigen Anwendungsmöglichkeiten bisher in den Curricular der Hochschulstudiengänge weitgehend unterrepräsentiert. Dies mag daran liegen, dass die Blockchain-Technologie für Dozenten kein einfach zu vermittelnder Lehrinhalt ist. Verlangt sie doch als Querschnittstechnologie von den Lehrenden ein fundiertes interdisziplinäres Wissen in Datenbankanwendungen, Kryptographie, Prozessorganisation und über deren vielfältigen Anwendungsmöglichkeiten in der Ökonomie. daher bleibt für Studierenden die Blockchain-, Token- und Kryptowelt meist sehr abstrakt, ohne persönlichen Zugang und die Möglichkeit des Sammelns von eigenen Erfahrungen. Studierenden und Lehrenden fehlt ein konkretes Anwendungsbeispiel für die Nutzung von Token auf der Blockchain. Dies soll sich mit der Entwicklung eines blockchain-basierten Spiels für Studierende der HSBI ändern.",
     "titel-3": "Idee: NFTs und Blockchain als Spiel für HSBI-Studierende",
@@ -181,12 +183,6 @@
     "impressum": "Impressum",
     "datenschutz": "Datenschutz"
   },
-  "imprint-page": {
-    "title": "Impressum"
-  },
-  "privacy-page": {
-    "title": "Datenschutz"
-  },
   "underConstruction": {
     "title": "Seite im Aufbau",
     "message": "Diese Seite befindet sich derzeit im Aufbau. Bitte schauen Sie später noch einmal vorbei."
@@ -194,5 +190,13 @@
   "accordion-item": {
     "open": "-",
     "close": "+"
-  }
+  },
+  "nfts-page-claim-modal": {
+    "claim-title": "NFT für deine Veranstaltung",
+    "code-title": "Veranstaltungscode",
+    "code-placeholder": "Gib deinen Code ein",
+    "claim-button": "NFT erhalten"
+  },
+  "nfts-page-loading-error-msg": "Fehler beim Laden der NFTs. Bitte versuche es später erneut.",
+  "nfts-page-no-data-msg": "Keine NFTs verfügbar."
 }

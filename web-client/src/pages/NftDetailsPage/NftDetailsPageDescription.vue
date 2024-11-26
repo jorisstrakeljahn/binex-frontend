@@ -70,6 +70,7 @@
       </div>
 
       <app-button
+        class="nft-details-page-description__transfer-btn"
         v-if="provider.selectedAddress === props.nft?.owner"
         :text="$t('nft-details-page-description.transfer-btn')"
         @click="toggleMintModal"
@@ -117,7 +118,13 @@ const reloadNftList = () => {
 .nft-details-page-description {
   display: flex;
   justify-content: space-between;
+  max-width: 1400px;
+  padding: 0 0 0 var(--app-padding-left);
   gap: toRem(20);
+
+  @media (max-width: 768px) {
+    padding: 0 0 0 0;
+  }
 
   @include respond-to(tablet) {
     flex-direction: column;
@@ -129,7 +136,7 @@ const reloadNftList = () => {
   justify-content: center;
   flex: 1;
   min-width: toRem(350);
-  max-width: toRem(750);
+  max-width: 1000px;
   width: 100%;
   background: var(--white);
   padding: toRem(24);
@@ -157,6 +164,10 @@ const reloadNftList = () => {
   font-weight: 600;
   font-size: toRem(32);
   margin-bottom: toRem(24);
+
+  @media (max-width: 768px) {
+    padding: 0 var(--app-padding-right) 0 var(--app-padding-left);
+  }
 }
 
 .nft-details-page-description__info-item-wrapper {
@@ -197,5 +208,11 @@ const reloadNftList = () => {
   max-width: toRem(250);
 
   @include text-ellipsis;
+}
+
+.nft-details-page-description__transfer-btn {
+  @media (max-width: 768px) {
+    margin: 0 var(--app-padding-right) 200px var(--app-padding-left);
+  }
 }
 </style>
