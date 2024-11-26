@@ -19,7 +19,7 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n'
 import WorkInProgressImage from '@/assets/work-in-progress-image.svg'
-import EventImage from '@/assests/1-binex-nft-event-blockchain-trifft-finance.jpeg'
+import EventImage from '@/assets/1-binex-nft-event-blockchain-trifft-finance.jpg'
 import AppFooter from '@/common/AppFooter.vue'
 
 export default {
