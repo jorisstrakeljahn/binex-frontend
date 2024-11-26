@@ -157,7 +157,7 @@ const loadNftData = async () => {
 
 const filterNftList = async (address: string) => {
   search.value = address
-  loadNftData()
+  await loadNftData()
 }
 
 const openClaimModal = () => {
@@ -170,34 +170,49 @@ const closeClaimModal = () => {
 
 const claimNft = async () => {
   if (!claimCode.value) {
-    claimCodeError.value = 'Bitte gib einen gültigen Code ein.' // Fehlermeldung setzen
+    claimCodeError.value = 'Bitte gib einen gültigen Code ein.'
     return
   }
 
-  claimCodeError.value = '' // Fehlermeldung zurücksetzen
+  claimCodeError.value = ''
   isClaiming.value = true
 
   try {
     await getPublicKey()
+
+    if (!publicKey.value) {
+      alert('Fehler: Der Public Key konnte nicht abgerufen werden.')
+      isClaiming.value = false
+      return
+    }
+
+    const queryParams = new URLSearchParams({
+      publicKey: publicKey.value,
+      surveyId: claimCode.value,
+      participantPoints: '1',
+    })
+
     const response = await fetch(
-      'https://binex-backend-321237844397.europe-west3.run.app/api/mint-nft?' +
-        new URLSearchParams({
-          publicKey: publicKey.value,
-          surveyId: claimCode.value,
-          participantPoints: '1',
-        }),
+      `https://binex-backend-321237844397.europe-west3.run.app/api/mint-nft?${queryParams.toString()}`,
+      {
+        method: 'POST',
+      },
     )
+
     if (response.ok) {
       alert('NFT erfolgreich gesichert!')
+      closeClaimModal() // Popup schließen
+      await loadNftData() // NFT-Liste neu laden
     } else {
-      alert('Fehler beim Minten des NFTs. Bitte überprüfe den Code.')
+      const errorMessage = await response.text()
+      console.error('Server-Antwort:', errorMessage)
+      alert(`Fehler beim Minten des NFTs: ${errorMessage}`)
     }
   } catch (error) {
     console.error('Fehler beim Claim:', error)
     alert('Ein unerwarteter Fehler ist aufgetreten.')
   }
   isClaiming.value = false
-  closeClaimModal()
 }
 
 loadNftData()
