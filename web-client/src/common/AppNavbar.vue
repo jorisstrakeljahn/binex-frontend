@@ -64,9 +64,7 @@
             </router-link>
             <button
               class="instruction-button"
-              @click="
-                navigateToSection(ROUTE_NAMES.binex, 'guide-section-binex')
-              "
+              @click="navigateToRoute(ROUTE_NAMES.binexMetaMask)"
             >
               {{ t('header.guide') }}
             </button>
@@ -119,6 +117,11 @@ function toggleMenu() {
 function navigateToSection(routeName: string, sectionId: string) {
   toggleMenu()
   router.push({ name: routeName, hash: `#${sectionId}` })
+}
+
+function navigateToRoute(routeName: string) {
+  toggleMenu()
+  router.push({ name: routeName })
 }
 </script>
 

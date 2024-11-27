@@ -10,9 +10,17 @@
       <h1 class="header-section__title">
         {{ t('binex-page.title') }}
       </h1>
-      <router-link to="/binex/nfts" class="header-section__button">
-        {{ t('binex-page.button-text') }}
-      </router-link>
+      <div class="header-section__buttons">
+        <router-link to="/binex/nfts" class="header-section__button">
+          {{ t('binex-page.button-text') }}
+        </router-link>
+        <router-link
+          to="/binex/metamask"
+          class="header-section__button header-section__button--blue"
+        >
+          {{ t('binex-page.button-text-metamask') }}
+        </router-link>
+      </div>
     </section>
 
     <!-- Content Section -->
@@ -162,9 +170,16 @@ const { t } = useI18n()
     margin-top: 1.5rem;
   }
 
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
   &__button {
     display: inline-block;
-    margin-top: 2rem;
     padding: 0.75rem 3rem;
     background-color: #000000;
     color: #fff;
@@ -178,6 +193,11 @@ const { t } = useI18n()
     &:hover {
       transform: scale(1.08);
     }
+  }
+
+  &__button--blue {
+    background-color: #007bff;
+    color: #fff;
   }
 }
 

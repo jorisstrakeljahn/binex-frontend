@@ -30,6 +30,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/pages/BinexPage'),
   },
   {
+    path: '/binex/metamask',
+    name: ROUTE_NAMES.binexMetaMask,
+    component: () => import('@/pages/BinexPage/BinexPageMetaMask.vue'),
+  },
+  {
     path: '/events',
     name: ROUTE_NAMES.events,
     component: () => import('@/pages/EventsPage'),
