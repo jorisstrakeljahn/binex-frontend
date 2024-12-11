@@ -11,10 +11,6 @@ import { storeToRefs } from 'pinia'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/:catchAll(.*)',
-    redirect: { name: ROUTE_NAMES.home },
-  },
-  {
     path: '/',
     name: ROUTE_NAMES.home,
     component: () => import('@/pages/HomePage'),
@@ -70,6 +66,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/connect',
     name: 'ConnectPage',
     component: () => import('@/pages/ConnectPage/ConnectPage.vue'),
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: { name: ROUTE_NAMES.home },
   },
 ]
 
